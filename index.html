@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> -= Formulir Biodata =- </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <form action="hasil.php" method="post">
+            <div class="card bg-warning">
+                <div class="card-header text-center mb-3 mb-sm-3 bg-primary text-light"> 
+                    <h2> Formulir Biodata Mahasiswa </h2>
+                </div>
+                        <div class="container">
+                            <div class="row">
+    
+                            <!-- Card 1 -->
+                            <div class="col-sm-6 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="mb-sm-3">
+                                        <label class="form-label text-center">
+                                        Nama Lengkap :
+                                        </label>
+                                        <input type="text" class="form-control w-100 " name="Nama"
+                                            placeholder="Masukkan Nama Lengkap Anda" required>
+                                    </div> 
+    
+                                    <div class="mb-sm-3">
+                                        <label class="form-label">
+                                            Tempat,Tanggal Lahir :
+                                        </label>
+                                        <input type="text" class="form-control" name="TTL"
+                                            placeholder="Masukkan Tempat, Tanggal Lahir anda"
+                                            required>
+                                    </div>
+    
+                                    <div class="mb-sm-3">
+                                        <label class="form-label">
+                                            No.Telepon / HP :
+                                        </label>
+                                        <input type="number" class="form-control" name="notelp"
+                                            placeholder="Masukkan No Telepon / HP Anda"
+                                            required>
+                                    </div>
+    
+                                    <label class="form-label">
+                                        Jenis Kelamin :
+                                    </label>
+    
+                                    <div class="form-check mb-sm-3">
+                                        <input type="radio" class="form-check-input" name="jeniskelamin" value="Laki-Laki">
+                                        <label class="form-check-label" for="jeniskelamin"> Laki-laki </label>
+                                    </div>
+                                    <div class="form-check mb-sm-3">
+                                        <input type="radio" class="form-check-input" name="jeniskelamin" value="Perempuan">
+                                        <label class="form-check-label" for="jeniskelamin"> Perempuan </label>
+                                    </div>
+    
+                                    <div class="mb-3">
+                                        <label class="form-label"> Alamat : </label>
+                                        <textarea class="form-control" name="alamat" rows="3" placeholder="Masukkan Alamat Anda"></textarea>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            </div>
+                            <!-- Akhir Card 1 -->
+    
+                            <!-- Card 2 -->
+                            <div class="col-sm-6 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="mb-sm-3">
+                                            <label class="form-label text-center">
+                                            Universitas / Politeknik :
+                                            </label>
+                                            <input type="text" class="form-control w-100" name="kampus"
+                                                placeholder="Masukkan Nama Kampus Anda" required>
+                                        </div> 
+        
+                                        <div class="mb-sm-3">
+                                            <label class="form-label">
+                                                Jurusan : 
+                                            </label>
+                                            <input type="text" class="form-control" name="jurusan"
+                                                placeholder="Masukkan Jurusan Anda"
+                                                required>
+                                        </div>
+        
+                                        <div class="mb-sm-3">
+                                            <label class="form-label">
+                                                Semester :
+                                            </label>
+                                            <input type="number" class="form-control" name="semester"
+                                                placeholder="Masukkan Semester Anda Saat Ini"
+                                                required>
+                                        </div>
+        
+                                        <div class="mb-sm-3">
+                                            <label class="form-label">
+                                                NIM / NRP :
+                                            </label>
+                                            <input type="number" class="form-control" name="nrp"
+                                                placeholder="Masukkan NIM / NRP Anda "
+                                                required>
+                                        </div>
+    
+                                        <div class="mb-3">
+                                            <label class="form-label"> Kegiatan Organisasi / UKM : </label>
+                                            <textarea class="form-control" name="kegiatan" rows="4" placeholder="Masukkan Kegiatan Anda Selama Kuliah (Organisasi / UKM)"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            <!-- Akhir Card 2 -->
+                                
+                            <button class="btn btn-primary mb-1" type="submit"> SIMPAN </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+        </form>
+    </body>
+
+</html>
